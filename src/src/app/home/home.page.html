@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      AC2 - Linguagem de Programação III
+      AC2
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
   <ion-radio-group [(ngModel)]="plano">
     <ion-list-header>
-      <ion-label>Exercício - 1</ion-label>
+      <ion-label>EX1</ion-label>
     </ion-list-header>
 
     <ion-item>
@@ -30,26 +30,23 @@
   <ion-item>
     <ion-input [(ngModel)]="kmRodado" placeholder="Quantidade de quilômetros rodados"></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-button expand="block" (click)="calcular()">Calcular</ion-button>
-  </ion-item>
-
+  <ion-button expand="block" (click)="calcular()">Calcular</ion-button>
 
   <ion-list-header>
-    <ion-label>Exercício - 2</ion-label>
+    <ion-label>EX2</ion-label>
   </ion-list-header>
 
   <ion-radio-group [(ngModel)]="combustivel">
     <ion-item>
-      <ion-radio value="etanol">Etanol</ion-radio>
+      <ion-radio value="etanol">ETANOL</ion-radio>
     </ion-item>
 
     <ion-item>
-      <ion-radio value="gasolina">Gasolina</ion-radio>
+      <ion-radio value="gasolina">GASOLINA</ion-radio>
     </ion-item>
 
     <ion-item>
-      <ion-radio value="diesel">Diesel</ion-radio>
+      <ion-radio value="diesel">DIESEL</ion-radio>
     </ion-item>
   </ion-radio-group>
 
@@ -60,10 +57,8 @@
   </ion-item>
 
   <ion-item>
-    <ion-input [(ngModel)]="km2"  label="Quilometragem rodada:" placeholder="Insira a quantidade de quilômetros"></ion-input>
+    <ion-input [(ngModel)]="km2"  label="Quilometragem rodada:" placeholder="Insira a quilometragem"></ion-input>
   </ion-item>
 
-  <ion-item>
-    <ion-button (click)="calcular2()" expand="block">Calcular</ion-button>
-  </ion-item>
+  <ion-button (click)="calcular2()" expand="block">Calcular</ion-button>
 </ion-content>
